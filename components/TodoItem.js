@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#7245ed",
   },
   itemLeft: {
+    flex: 1,
     flexDirection: "row",
     alignItems: "center",
   },
@@ -86,11 +87,13 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontWeight: "bold",
     fontSize: 16,
+    flex: 1,
   },
   itemLeftContentComplete: {
     textDecorationLine: "line-through",
   },
   itemRight: {
+    flexShrink: 1,
     marginLeft: 10,
   },
   itemRightIcon: {

@@ -17,8 +17,8 @@ const TodoForm = () => {
   };
 
   const handleSubmit = () => {
-    if (todo.content.length < 5) {
-      Alert.alert("Warning", "Todo content must be longer than 4 character", [
+    if (!todo.content.length) {
+      Alert.alert("Warning", "Todo content can't be empty", [
         { text: "Okey Get It" },
       ]);
       return;
